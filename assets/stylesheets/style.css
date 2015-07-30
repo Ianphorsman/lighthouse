@@ -1,0 +1,92 @@
+@font-face  {
+    font-family: 'DroidSans';
+    src:font-url('assets/fonts/DroidSans.ttf');
+}
+@font-face  {
+    font-family: 'DroidSans-Bold';
+    src:font-url('assets/fonts/DroidSans-Bold.ttf');
+}
+/* colors:
+ * $main-light: #dfded4;
+ * $main-medium: #d6d3c4;
+ * $main-dark: #cdcab9;
+ * $brown: #5c4033;
+ * $oppo: #3530cc;
+ */
+body   {
+    background-color: #dfded4;
+    margin: 0 10%;
+    padding: 0.5em 0;
+    font-family: DroidSans-Bold;
+    height: 100vh;
+    box-sizing: border-box;
+}
+header  {
+    height: 20%;
+}
+header div  {
+    float: left;
+}
+header div:nth-of-type(1)   {
+    width: 85%;
+}
+header, aside, article  {
+    padding: 8px;
+    background-color: #d6d3c4;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    box-shadow: 0px 0px 10px 1px #5c4033;
+}
+section, aside  {
+    float: left;
+    box-sizing: border-box;
+}
+section {
+    width: 89%;
+    height: 80%;
+    background-color: grey;
+    margin-right: 1%;
+}
+article {
+    height: 100%;
+}
+aside   {
+    width: 10%;
+    height: 80%;
+    text-align: center;
+}
+h1, h2, h3, h4  {
+    color: #5c4033;
+}
+aside section   {
+    background-color: #d6d3c4;
+    border-radius: 5px;
+    float: none;
+    height: 10vh;
+    text-align: center;
+    display: inline-block;
+}
+aside section img   {
+    height: inherit;
+}
+aside section img:hover {
+    cursor: pointer;
+}
+aside section h4    {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+}
+header h1   {
+    font-size: 2em;
+}
+section header h2, section header h3, section header h4 {
+    margin: 0.25em;
+}
+section header h3   {
+    font-style: italic;
+    font-weight 100;
+}
+article span    {
+    text-decoration: underline;
+}
