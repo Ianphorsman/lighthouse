@@ -1,10 +1,12 @@
 @font-face  {
     font-family: 'DroidSans';
-    src:font-url('assets/fonts/DroidSans.ttf');
+    src: url('assets/fonts/DroidSans.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face  {
     font-family: 'DroidSans-Bold';
-    src:font-url('assets/fonts/DroidSans-Bold.ttf');
+    src: url('assets/fonts/DroidSans-Bold.ttf') format('ttf');
 }
 /* colors:
  * $main-light: #dfded4;
@@ -17,9 +19,14 @@ body   {
     background-color: #dfded4;
     margin: 0 10%;
     padding: 0.5em 0;
-    font-family: DroidSans-Bold;
     height: 100vh;
     box-sizing: border-box;
+}
+p, span, li {
+    font-family: 'DroidSans', arial;
+}
+h1, h2, h3, h4  {
+    font-family: "DroidSans-Bold", arial;
 }
 header  {
     height: 20%;
@@ -77,6 +84,20 @@ aside section h4    {
     font-size: 1.2em;
     text-align: center;
     margin-top: 0;
+}
+aside section p {
+    text-align: left;
+}
+aside section ul    {
+    padding: 0;
+    margin-left: 1em;
+    text-align: left;
+}
+aside section ul li {
+    margin-bottom: 0.5em;
+}
+.green  {
+    color: green;
 }
 header h1   {
     font-size: 2em;
