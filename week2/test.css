@@ -1,0 +1,15 @@
+html    {
+    padding: 0px;
+    margin: 0px;
+}
+body    {
+    border: solid 1px black;
+    height: 100vh;
+    margin: 0px 5%;
+    padding: 0px;
+}
+form    {
+    float: right;
+    height: 50vh;
+    width: 50%;
+}
