@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+    <nav>
+        <% unless user_signed_in? %>
+            <%= link_to 'users/sign_in', :remote => true %>
+        <% end %>
+        <% if user_signed_in? %>
+            <%= link_to 'users/sign_out', :remote => true %>
+            <%= link_to 'movies/show/', :remote => true %>
+            <%= link_to 'movies/show_all', :remote => true %>
+        <% end %>
+        <%= link_to 'users/sign_up', :remote => true %>
+    </nav>
 <%= yield %>
 
 </body>
